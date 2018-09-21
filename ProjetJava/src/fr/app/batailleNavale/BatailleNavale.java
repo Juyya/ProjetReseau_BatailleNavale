@@ -19,6 +19,8 @@ public class BatailleNavale implements Serializable{
 	private static final int N3 = 2;
 	private static final int N4 = 1;
 	private static final int N5 = 1;
+	private static final int N6 = 1;
+	// Définir un damier static
 	
 	// Variable local
 	
