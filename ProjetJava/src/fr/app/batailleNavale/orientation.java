@@ -1,4 +1,4 @@
-package test;
+package fr.app.batailleNavale;
 
 public enum orientation {
     V,

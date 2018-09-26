@@ -1,4 +1,4 @@
-package test;
+package fr.app.batailleNavale;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package test;
+package fr.app.batailleNavale;
 
 import java.util.Scanner;
 import java.util.Set;
@@ -76,33 +76,42 @@ public class Game implements Runnable {
 				System.out.printf("Porte avion\n");
 				while ((!tab_bateau[i].check_ds_damier(damier)) || (!tab_bateau[i].check_colision(i, tab_bateau))) {
 					sv.demande_coord_orientation(tab_bateau[i]);
+					if ((!tab_bateau[i].check_ds_damier(damier)) || (!tab_bateau[i].check_colision(i, tab_bateau)))
+						System.out.println("En dehors du damier ou colision, RECOMMENCEZ");
 				}
 				break;
 			case CROISEUR:
 				System.out.printf("Croiseur\n");
 				while ((!tab_bateau[i].check_ds_damier(damier)) || (!tab_bateau[i].check_colision(i, tab_bateau))) {
-					sv.demande_coord_orientation(tab_bateau[i]);
+					sv.demande_coord_orientation(tab_bateau[i]);		
+					if ((!tab_bateau[i].check_ds_damier(damier)) || (!tab_bateau[i].check_colision(i, tab_bateau)))
+						System.out.println("En dehors du damier ou colision, RECOMMENCEZ");
 				}
 				break;
 
 			case CONTRETORPILLEUR:
 				System.out.printf("Contre torpilleur\n");
 				while ((!tab_bateau[i].check_ds_damier(damier)) || (!tab_bateau[i].check_colision(i, tab_bateau))) {
-					sv.demande_coord_orientation(tab_bateau[i]);
+					sv.demande_coord_orientation(tab_bateau[i]);			
+					if ((!tab_bateau[i].check_ds_damier(damier)) || (!tab_bateau[i].check_colision(i, tab_bateau)))
+						System.out.println("En dehors du damier ou colision, RECOMMENCEZ");
 				}
 				break;
 
 			case SOUSMARIN:
 				System.out.printf("Sous Marin\n");
 				while ((!tab_bateau[i].check_ds_damier(damier)) || (!tab_bateau[i].check_colision(i, tab_bateau))) {
-					sv.demande_coord_orientation(tab_bateau[i]);
+					sv.demande_coord_orientation(tab_bateau[i]);					if ((!tab_bateau[i].check_ds_damier(damier)) || (!tab_bateau[i].check_colision(i, tab_bateau)))
+						System.out.println("En dehors du damier ou colision, RECOMMENCEZ");
 				}
 				break;
 
 			case TORPILLEUR:
 				System.out.printf("Torpilleur\n");
 				while ((!tab_bateau[i].check_ds_damier(damier)) || (!tab_bateau[i].check_colision(i, tab_bateau))) {
-					sv.demande_coord_orientation(tab_bateau[i]);
+					sv.demande_coord_orientation(tab_bateau[i]);				
+					if ((!tab_bateau[i].check_ds_damier(damier)) || (!tab_bateau[i].check_colision(i, tab_bateau)))
+						System.out.println("En dehors du damier ou colision, RECOMMENCEZ");
 				}
 				break;
 			}
